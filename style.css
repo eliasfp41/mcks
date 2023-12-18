@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    width: 150px;
+    height: 70px;
+    border-radius: 5px;
+    margin-left: 50px;
+    
+}
+.hero{
+    min-height: 100vh;
+    background: rgb(1,149,203);
+    background: linear-gradient(90deg, rgba(1,149,203,1) 9%, rgba(0,95,255,0.8660714285714286) 100%);
+    background-size: cover;
+    background-position: center;
+    border-top: 4px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid black;
+}
+.hfoto{
+    width: 600px;
+    height: 500px;
+    float: right;
+}
+.maintxt{
+    font-size: 2rem;
+}
+
+.hero-t {
+    margin: auto;
+    max-width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    background-color: #e8f1f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+    margin-right: 50px;
+    position: relative;
+    font-size: 18px;
+    color: rgb(74, 74, 235);
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar ::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(46, 46, 218);
+    transition: .3s;
+
+}
+.navbar a:hover::before{
+    width: 100%;
+
+}
+.pro{
+    height: 400px;
+}
+.hero p{
+    font-size: 1.2rem;
+}
+.card-sct{
+    height: 100%;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    flex: 1;
+    margin: 20px ;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.card img{
+    width: 100%;
+    height: 300px;
+}
+.card h2{
+    margin: 5px;
+    font-size: 28px;
+    color: #1662a1;
+    font-family: sans-serif;
+}
+.card p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+.nxt{
+    height: 500px;
+    background: rgb(1,149,203);
+    background: linear-gradient(90deg, rgba(1,149,203,1) 9%, rgba(0,95,255,0.8660714285714286) 100%);
+}
+.inc{
+    border: 1px solid rgb(1,149,203);
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    color: rgb(1,149,203);
+    position: relative;
+    overflow: hidden;
+    
+}
+.inc:hover{
+    color: #ffff;
+    background: rgb(1,149,203);
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url("/mcksite/images/pexels-klaus-167676.jpg");
+    background-size: cover;                  
+}
+.contact .cont{
+    max-width: 800px;
+    text-align: center;
+}
+.cont h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffff;
+}
+.cont p{
+    
+    font-weight: 300;
+    color: #ffff;
+}
+.contsc{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.contsc .continfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.continfo .box{
+    position: relative;
+    pad: 20px 0;
+    display: flex;
+    margin-top: 30px
+}
+.box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.box .contxt{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.box .contxt h3{
+    font-weight: 500;
+    color: rgb(1,149,203);
+}
+.contform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.inputbox{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.inputbox input, .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.inputbox input:focus ~ span,
+.inputbox input:valid ~ span,
+.inputbox textarea:focus ~ span,
+.inputbox textarea:valid ~ span{
+    color: red;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+} 
+
